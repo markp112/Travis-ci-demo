@@ -3,5 +3,5 @@ language: java
 script: mvn test -B
 
 # sets the operating systems of VM
-os: windows
+os: linux
 
