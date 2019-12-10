@@ -3,5 +3,18 @@ language: java
 script: mvn test -B
 
 # sets the operating systems of VM
-os: linux
+os:
+  - linux
+  - osx
+
+  jdk: oraclejdk8
+
+  branches:
+    only:
+      - master
+
+  deploy:
+    provider: heroku:git
+    api_key:
+      secure:
 
